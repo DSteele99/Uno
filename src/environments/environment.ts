@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyBTG_6kjGmsg_eiDlGrTZmEsMDqz15so2A",
+    authDomain: "uno-game-4e884.firebaseapp.com",
+    databaseURL: "https://uno-game-4e884.firebaseio.com",
+    projectId: "uno-game-4e884",
+    storageBucket: "uno-game-4e884.appspot.com",
+    messagingSenderId: "274069887543",
+    appId: "1:274069887543:web:b490336f25fd1b8b237db2",
+    measurementId: "G-J566D9VLCT"
+  }
 };
 
 /*
