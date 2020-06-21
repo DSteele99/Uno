@@ -1,1 +1,8 @@
-<p>game-table works!</p>
+<div *ngIf="gameService && gameService.gameLoadedTF">
+    <h2>
+        Cards Played :)
+    </h2>
+    <div *ngFor="let card of gameService.game.dropPile">
+        {{card.color}}, {{card.value}}
+    </div>
+</div>
