@@ -1,8 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MainComponent } from './main/main.component';
+import { GameTableComponent } from './game-table/game-table.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'main', component: MainComponent,
+   children: [
+     {path: 'gametable', component: GameTableComponent},
+     {path: 'profile', component: ProfileComponent}
+   ]},
+   { path: '', redirectTo: '/main/gametable', pathMatch: 'full' },
+   { path: '**', redirectTo: '/main/gametable', pathMatch: 'full' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

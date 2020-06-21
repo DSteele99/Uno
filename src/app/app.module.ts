@@ -7,10 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { GameService } from './core/game.service';
+import { GameTableComponent } from './game-table/game-table.component';
+import { MainComponent } from './main/main.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GameTableComponent,
+    MainComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
